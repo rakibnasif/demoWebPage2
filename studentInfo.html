@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="studentInfo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>studentCard</title>
+</head>
+
+<body>
+  <div class="card-container">
+
+    <div class="caption">
+      <h2>Student Information</h2>
+    </div>
+
+    <form action="" id="student-form">
+
+      <div class="input-group">
+        <input type="text" id="studentName" placeholder="Enter Name">
+      </div>
+
+      <div class="input-group">
+        <input type="number" id="studentRoll" placeholder="Enter Roll">
+      </div>
+
+      <div class="input-group" >
+        <input type="number" id="banglaMarks" placeholder="Bangla Marks">
+      </div>
+
+      <div class="input-group" >
+        <input type="number" id="englishMarks" placeholder="English Marks">
+      </div>
+
+      <button onclick="return addrow()" type="submit" class="submit-btn">Submit</button>
+
+    </form>
+
+  </div>
+  <div class="table-container">
+
+    <div class="studentlist-text">
+      <h2>Student List</h2>
+    </div>
+
+    <table class="studentTable">
+
+      <thead id="tableHead">
+
+        <tr>
+          <th>SL No.</th>
+          <th>Name</th>
+          <th>Roll</th>
+          <th>Bangla</th>
+          <th>English</th>
+          <th>Total Marks</th>
+        </tr>
+
+      </thead>
+      
+      <tbody id="tableBody">
+
+        <tr id="noData">
+          <td colspan="6" >No data added yet</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+<script src="studentInfo.js"></script>
+
+</body>
+
+</html>
+
